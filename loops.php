@@ -101,19 +101,19 @@
         </section>
 
         <section class= "contentHeading">
-                <hr>Topics-> Test loops :<hr>
+                <hr>Topics-> Test loops : Rombus making by star pattern<hr>
         </section>
         <section>
             <?php 
                $star="*";
                $space=" ";
-                for ($row=4; $row >=0 ; $row--) {  //looping rows, means nested arrays.
+                for ($row=4; $row >=0 ; $row--) {  //looping rows .
                     
-                    for ($space=0; $space<=$row-1; $space++) {    //looping columns, means nested array's data.
+                    for ($space=0; $space<=$row-1; $space++) {    //looping space.
                         echo $space;
                     }
                     
-                        for ($col=0; $col<=4 ; $col++) { 
+                        for ($col=0; $col<=4 ; $col++) { //looping stars.
                             echo $star;
                         }
                         echo "<br/>";
