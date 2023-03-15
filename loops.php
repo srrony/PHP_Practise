@@ -99,6 +99,29 @@
             ?>
 
         </section>
+
+        <section class= "contentHeading">
+                <hr>Topics-> Test loops :<hr>
+        </section>
+        <section>
+            <?php 
+               $star="*";
+               $space=" ";
+                for ($row=4; $row >=0 ; $row--) {  //looping rows, means nested arrays.
+                    
+                    for ($space=0; $space<=$row-1; $space++) {    //looping columns, means nested array's data.
+                        echo $space;
+                    }
+                    
+                        for ($col=0; $col<=4 ; $col++) { 
+                            echo $star;
+                        }
+                        echo "<br/>";
+                         
+                    }
+            ?>
+
+        </section>
      
  </section>
  
