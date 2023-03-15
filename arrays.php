@@ -19,7 +19,7 @@
 
         <section class="maincontent">
         <section class= "contentHeading">
-                <hr>Topics-> :<hr>
+                <hr>Topics-> Php Arrays :<hr>
         </section>
 
         <section>
@@ -31,6 +31,7 @@
 
         </section>
         </section>
+
         <section class="footer">
             <h2>This is Footer</h2>
         </section>
