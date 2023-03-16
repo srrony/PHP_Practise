@@ -106,17 +106,22 @@
         <section>
             <?php 
                $star="*";
-               $space=" ";
+               $spac="&nbsp";
                 for ($row=4; $row >=0 ; $row--) {  //looping rows .
                     
-                    for ($space=0; $space<=$row-1; $space++) {    //looping space.
-                        echo $space;
+                    for ($fspace=0; $fspace<=$row-1; $fspace++) {    //looping space.
+                        echo $spac;
                     }
                     
                         for ($col=0; $col<=4 ; $col++) { //looping stars.
                             echo $star;
-                        }
-                        echo "<br/>";
+                            }   
+
+                            echo "<br/>"; 
+
+                
+                        
+                        
                          
                     }
             ?>
