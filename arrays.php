@@ -18,8 +18,9 @@
       </section>
 
         <section class="maincontent">
+<!--       
         <section class= "contentHeading">
-                <hr>Topics-> Index Arrays :<hr>
+              <hr>Topics-> Index Arrays :<hr>
         </section>
 
         <section>
@@ -81,8 +82,45 @@
             ?>
 
         </section>
-        
+-->       
+<section class= "contentHeading">
+                <hr>Topics-> Sorting Arrays :<hr>
+        </section>
+        <section>
+            <?php
+            //print all data in array
+            $ages = array(2,3,4343,1234,43,342,2545,22,23,545,532,23,2325,531);
+            $length = count($ages);
+            sort($ages);                                           //Sorted a->z
+            //rsort($ages);                                           //Sorted z->a
+            //asort($ages);                                       //Sorted by value($age)
+            //ksort($ages);                                         //Sorted by key ($name)
+            for ($i=0;$i<$length;$i++) {
+                echo $ages[$i];
+                echo "<br/>";
+            }
+            
+            ?>
 
+</section>
+
+<section class= "contentHeading">
+                <hr>Topics-> Sorting Arrays :<hr>
+        </section>
+        <section>
+            <?php
+            //print all data in array
+            $ages = array("Rony"=> "29","Fahmida"=> "27","Rubel"=> "34","Taibur"=> "64","Lily "=> "53");
+            //asort($ages);                                       //Sorted by value($age)
+            ksort($ages);                                         //Sorted by key ($name)
+            foreach ($ages as $name => $age) {
+                echo "Name=".$name. "<br/> Age=".$age;
+                echo "<br/>";
+            }
+            
+            ?>
+
+</section>
         </section>
 
         <section class="footer">
