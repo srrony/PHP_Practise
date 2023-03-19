@@ -78,6 +78,8 @@
                 }
                 
             }
+            echo "<pre/>";
+                print_r($getoccurance);
             asort($getoccurance);
                 $keyarr= array_keys($getoccurance);
                 echo "<br/>the ans is : " .$keyarr[0];
