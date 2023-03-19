@@ -29,17 +29,17 @@
            function test1(){
             $a=34;
             global $x;        //making the $x global variable to access here.
-            echo $a;
+            echo "Local variable from func test1= ".$a;
             echo "<br/>";
-            echo $x;
+            echo "global variable:Accesing from func test1 =". $x;
            }
 
            function test2(){
             $b=65;
             global $x;         //making the $x global variable to access here.
-            echo $b;
+            echo "Local variable from func test2 =".$b;
             echo "<br/>";
-            echo $x;
+            echo "global variable:Accesing from func test2 =". $x;
            }
 
            test1();
