@@ -19,7 +19,7 @@
 
         <section class="maincontent">
         <section class= "contentHeading">
-                <hr>Topics-> Super GLOBALS & SERVER:<hr>
+                <hr>Topics-> Super GLOBALS :<hr>
         </section>
 
         <section>
@@ -35,6 +35,26 @@
 
             Sum();
             echo "The sum is= ". $z;
+            ?>
+
+        </section>
+        <section class= "contentHeading">
+                <hr>Topics-> $_SERVER:<hr>
+        </section>
+
+        <section>
+            <?php
+            echo "File Location is --".$_SERVER['PHP_SELF'];          //File Location
+            echo "<br/>";
+            echo "Site name is --".$_SERVER['SERVER_NAME'];       //Site Name
+            echo "<br/>";
+            echo "File path is --".$_SERVER['SCRIPT_NAME'];       //File Path
+            echo "<br/>";
+            echo "Browser name is --".$_SERVER['HTTP_USER_AGENT'];   //Browser Name
+            echo "<br/>";
+            echo "IP address is --".$_SERVER['SERVER_ADDR'];          // IP Address
+
+
             ?>
 
         </section>
