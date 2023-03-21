@@ -19,14 +19,22 @@
 
         <section class="maincontent">
         <section class= "contentHeading">
-                <hr>Topics-> :<hr>
+                <hr>Topics-> Super GLOBALS & SERVER:<hr>
         </section>
 
         <section>
             <?php
+
+            $x= 5;
+            $y= 50;
             
-           
-             
+            function sum(){
+                $GLOBALS['z']= $GLOBALS['x'] + $GLOBALS['y'];           //Example of Super global
+                //echo "The sum is= ". $GLOBALS['z'];            
+            }
+
+            Sum();
+            echo "The sum is= ". $z;
             ?>
 
         </section>
