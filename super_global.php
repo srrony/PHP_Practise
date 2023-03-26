@@ -69,7 +69,30 @@
         <section>
             <?php
             if ($_SERVER["REQUEST_METHOD"]== "POST") {
-                $name = $_REQUEST["username"];
+                $name = $_REQUEST["username"];      //REQUEST method work for get , post, cookie method in HTML input form. less secure.
+                if (empty($name)) {
+                    echo "Insert Username!";
+                }
+                else {
+                    echo "Submitted";
+                }
+            }
+        
+            ?>
+
+        </section>
+        <section class= "contentHeading">
+                <hr>Topics-> $_POST:<hr>
+        </section>
+        <form action= "<?php echo $_SERVER['PHP_SELF']?>" method= "post"> 
+            username: <input type= "text" name= "username"/>
+            <input type="submit" name= "submit"/>
+        </form>
+
+        <section>
+            <?php
+            if ($_SERVER["REQUEST_METHOD"]== "POST") {
+                $name = $_POST["username"];      //POST method only work when we use post method in HTML Input Form. Most Secure.
                 if (empty($name)) {
                     echo "Insert Username!";
                 }
