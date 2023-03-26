@@ -58,6 +58,29 @@
             ?>
 
         </section>
+        <section class= "contentHeading">
+                <hr>Topics-> $_REQUEST:<hr>
+        </section>
+        <form action= "<?php echo $_SERVER['PHP_SELF']?>" method= "post"> 
+            username: <input type= "text" name= "username"/>
+            <input type="submit" name= "submit"/>
+        </form>
+
+        <section>
+            <?php
+            if ($_SERVER["REQUEST_METHOD"]== "POST") {
+                $name = $_REQUEST["username"];
+                if (empty($name)) {
+                    echo "Insert Username!";
+                }
+                else {
+                    echo "Submitted";
+                }
+            }
+        
+            ?>
+
+        </section>
         </section>
         <section class="footer">
             <h2>This is Footer</h2>
