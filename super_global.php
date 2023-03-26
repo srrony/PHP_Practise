@@ -104,6 +104,20 @@
             ?>
 
         </section>
+
+        <section class= "contentHeading">
+                <hr>Topics-> $_GET:<hr>
+        </section>
+        
+        <a href="text.php?msg=I am Samiur Rahman Rony&value=MVP">Send Data</a>
+
+        <section>
+            <?php
+                    
+            ?>
+
+        </section>
+
         </section>
         <section class="footer">
             <h2>This is Footer</h2>
