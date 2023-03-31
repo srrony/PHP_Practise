@@ -1,6 +1,6 @@
 <?php  
 $errname = $erremail = $errmbl = $errgender = "";
-$gender = $name = $email = $mbl =  "";
+$gender = $name = $email = $mbl = $comment = "";
             
 
 if ($_SERVER['REQUEST_METHOD']== "POST") {
@@ -14,6 +14,9 @@ if ($_SERVER['REQUEST_METHOD']== "POST") {
 
     if(empty($_POST["email"])){
         $erremail = "<span style = 'color:red'>Email is required.</span>";
+    }
+    elseif (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
+       $erremail = "<span style = 'color:red'>Email is Invalid.</span>";
     }
     else {
         $email = validation($_POST["email"]);
@@ -85,7 +88,7 @@ function validation($data){
     </tr>
     <tr>
         <th>Email:</th>
-        <td><input type="email" name="email"  />*<?php echo $erremail; ?></td>
+        <td><input type="text" name="email"  />*<?php echo $erremail; ?></td>
     </tr>
     <tr>
         <th>Phone Number:</th>
